@@ -1,0 +1,82 @@
+body {
+    background-color: aquamarine;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container__inputs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.container__inputs #input1 {
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    width: 110px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+.container__inputs #input2 {
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    width: 110px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+.container__inputs #optionForCalculate {
+    margin: 0 20px;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    background-color: aquamarine;
+    width: 40px;
+}
+
+.container button {
+    display: block;
+    margin: 0 auto;
+    background-color: aquamarine;
+    color: black;
+    border: 2px dashed red;
+    border-radius: 5px;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.container button:hover {
+    background-color: red; /* Green */
+    color: white;
+}
+
+.container textarea {
+    display: block;
+    margin: 0 auto;
+    border-style: dashed;
+    border-color: red;
+    border-radius: 5px;
+    width: 300px;
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 400px) {
+    .container__inputs {
+      flex-direction: column;
+    }
+
+    .container__inputs #optionForCalculate {
+        margin: 20px auto;
+    }
+  }
